@@ -31,6 +31,10 @@ function drawChart() {
 
   let y = d3.scaleLinear()
 
+  let color = d3.scaleOrdinal()
+    .domain(['LEO', 'MEO', 'GEO', 'other', 'missing'])
+    .range(['#5db6d0', '#196c95', '#f9bc65', '#d66e42', '#b5bdc1'])
+
   function enter({ container, data }) {
     const svg = container.selectAll('svg').data([data])
     const svgEnter = svg.enter().append('svg')
@@ -47,8 +51,8 @@ function drawChart() {
 
     x.domain(years).rangeRound([0, width])
 
-    y.domain(d3.extent(data.map(d => d.total)))
-      // y.domain([0, 70])
+    // y.domain(d3.extent(data.map(d => d.total)))
+    y.domain([0, 70])
       .nice()
       .rangeRound([height, 0])
   }
@@ -83,6 +87,7 @@ function drawChart() {
         .enter()
         .append('rect')
         .attr('class', d => 'bar bar-' + key)
+        .attr('fill', d => color(key))
         .attr('data-year', d => d.data.year)
         .attr('x', d => x(d.data.year))
         .attr('y', height)
