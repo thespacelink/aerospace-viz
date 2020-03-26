@@ -49,7 +49,8 @@ async function getData(satelliteURL) {
 }
 
 function filterSatellites(satellites) {
-  return satellites.filter(d => d.include === 'TRUE')
+  // return satellites.filter(d => d.include === 'TRUE')
+  return satellites
 }
 
 function formatSatelliteData(d, isPerp) {
