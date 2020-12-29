@@ -38,16 +38,16 @@ $(function() {
     colors: ['#196c95', '#f9bc65', '#d66e42', '#4f9793', '#b5bdc1'],
     // Chart Title and Subtitle
     title: {
-      text: "Space Environment: Total Launches by Country"
+      text: "Количество пусков по странам"
     },
     subtitle: {
-      text: "Total Lauches from the United States, China, Russia, and All Other Space-faring Nations from 1957 to 2019"
+      text: "Количество пусков США, КНР, РФ, Японии и других стран с 1957 по" + (new Date().getFullYear())
     },
     // Credits
     credits: {
       enabled: true,
       href: false,
-      text: "CSIS Aerospace Security | Source: Space-Track.org"
+      text: "Источник: Space-Track.org"
     },
     // Chart Legend
     legend: {
