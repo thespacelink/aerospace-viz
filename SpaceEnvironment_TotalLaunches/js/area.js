@@ -2,7 +2,7 @@ $(function() {
   $('#hcContainer').highcharts({
     // Load Data in from Google Sheets
     data: {
-      googleSpreadsheetKey: '1FpDY2RRA1EW5Pk7cK9tRSstaH6P0f-2GEDc_VjNRI4o',
+      googleSpreadsheetKey: '1HRRfT9FQaghphIrE5H3cd7CDjonqvE-eiid8Ue0hdxE',
       googleSpreadsheetWorksheet: 1,
       complete: function (data) {
         // Display legend alphabetically
