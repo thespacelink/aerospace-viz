@@ -58,7 +58,7 @@ $(function() {
     // Y Axis
     yAxis: {
       title: {
-        text: "Total Launches per Year"
+        text: "Количество пусков по годам"
       },
     },
     // Tooltip
