@@ -1,5 +1,5 @@
 # aerospace-viz
-Data visualizations for the Aerospace Security website. Basic charts such as line and bar graphs are created using [Highcharts](http://www.highcharts.com/), while others are custom built solutions using visualization libraries such as [d3.js](https://d3js.org/).
+Data visualizations for the The Space Link website. Basic charts such as line and bar graphs are created using [Highcharts](http://www.highcharts.com/), while others are custom built solutions using visualization libraries such as [d3.js](https://d3js.org/).
 
 ## Style Guide
 Default Highcharts styles are defined in `globals/aerospace-highcharts-theme.js`. These styles incorporate the default color range and font styles, but can be overridden in individual project files when necessary.
