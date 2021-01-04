@@ -33,7 +33,7 @@ $(function() {
     // General Chart Options
     chart: {
       zoomType: 'x',
-      type: 'area'
+      type: 'line'
     },
     colors: ['#196c95', '#f9bc65', '#d66e42', '#4f9793', '#b5bdc1'],
     // Chart Title and Subtitle
