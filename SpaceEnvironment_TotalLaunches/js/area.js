@@ -38,7 +38,7 @@ $(function() {
     colors: ['#196c95', '#f9bc65', '#d66e42', '#4f9793', '#b5bdc1'],
     // Chart Title and Subtitle
     title: {
-      text: "Количество пусков по странам"
+      text: "Количество космических пусков по странам"
     },
     subtitle: {
       text: "Количество пусков США, КНР, РФ, Японии и других стран с 1957 по " + (new Date().getFullYear())
