@@ -2,6 +2,7 @@ $(function() {
   $('#hcContainer').highcharts({
     // Load Data in from Google Sheets
     data: {
+      googleAPIKey: "AIzaSyA9FJVLElOkEZ-ESvpiz4vFVctH0F5HiRI",
       googleSpreadsheetKey: '1Kcya18x3BzxArcSA3bzcPuOTh089cVlrnsbIEqmiWtk',
       googleSpreadsheetWorksheet: 1,
       complete: function (data) {
@@ -38,7 +39,7 @@ $(function() {
     colors: ['#196c95', '#f9bc65', '#d66e42', '#4f9793', '#b5bdc1'],
     // Chart Title and Subtitle
     title: {
-      text: "Количество космических пусков по странам"
+      text: "Количество космических пусков по странам."
     },
     subtitle: {
       text: "Количество пусков США, КНР, РФ, Японии и других стран с 1957 по " + (new Date().getFullYear())
